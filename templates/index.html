@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/poststyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/formstyle.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="maincontainer">
+            <div class="sample" id="profilepicture">
+                <img src="" alt="User Profile Picture" id="avatar">
+            </div>
+            <div class="sample" id="followdata">
+                <p>
+                    <strong id="repository"></strong>
+                    repostories
+                </p>
+                <p>
+                    <strong id="followers"></strong>
+                    followers
+                </p>
+                <p>
+                    <strong id="following"></strong>
+                    following
+                </p>
+
+            </div>
+            <div class="sample" id="followinterect">
+                <h3 class="username" id="username"></h3>
+                <div id="interectbuttons">
+                    <button id="messagebutton">Message</button>
+                    <button id="followbutton">Follow</button>
+                </div>
+
+            </div>
+            <div class="sample" id="biodata">
+                <h2 id="name"></h2>
+                <p id="bio"></p>
+                <p id="company"></p>
+                <p id="location"></p>
+                <p id="email"></p>
+            </div>
+        </div>
+
+
+        <div class="postcontainer" id="postcontainer">
+
+        </div>
+
+
+        <p id="userdata" style="display: none;">{{ data | tojson }}</p>
+        <p id="userrepos" style="display: none;">{{ repos | tojson }}</p>
+    </div>
+
+
+    <script>
+
+    </script>
+
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+    <script>
+
+    </script>
+
+</body>
+
+
+
+</html>
