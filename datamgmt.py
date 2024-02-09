@@ -9,7 +9,6 @@ load_dotenv()
 import os
 
 token = os.environ.get("apiaccesstoken")
-print(token)
 
 def fetch_github_user_data(username):
     access_token =token
