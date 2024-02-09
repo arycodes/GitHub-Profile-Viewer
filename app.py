@@ -12,7 +12,7 @@ def userindex(username):
     elif userdata :
         return render_template('ind.html', data=userdata)
     else: 
-        return "no username found"
+        return "Username not found or API access limit exceeded. If you believe your username is correct, please try again later."
 
 @app.route('/')
 def index():
