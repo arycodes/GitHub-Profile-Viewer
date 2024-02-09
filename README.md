@@ -3,7 +3,25 @@
 ### Description:
 The GitHub Profile Viewer is a Flask web application that allows users to view GitHub profiles along with user repositories. The application fetches data from the GitHub API using the provided access token and displays user information and repositories dynamically on a web page.
 
-### Features:
+
+### Accessing Your GitHub Profile or How To Use
+
+1. **Access the Application**: Go to [GitHub Card App](https://githubcardapp.vercel.app/) to access the application.
+
+2. **Modify the URL**: Once on the application page, you'll notice the URL in the address bar. It may look something like `https://githubcardapp.vercel.app/`. To view your own GitHub profile, replace the default username (`arycodes`) in the URL with your GitHub username.
+
+   For example:
+   - If your GitHub username is `yourusername`, your URL should look like `https://githubcardapp.vercel.app/yourusername`.
+
+3. **Press Enter or Go**: After replacing the default username with your GitHub username, press enter or click on the "Go" button in your browser to load the updated URL.
+
+4. **View Your Profile**: The application will fetch your GitHub profile information based on the provided username and display it on the screen, including your user data and repositories.
+
+5. **Explore Further**: Feel free to explore the data and repositories fetched from your GitHub profile.
+
+By following these steps, users can easily replace the default username in the URL with their own GitHub username to view their profile information using the GitHub Card App.
+
+## Features:
 - Fetches user data including name, bio, email, company, location, followers, following, and avatar.
 - Retrieves user repositories along with repository details such as name, description, language, URL, and languages used.
 - Provides a clean and intuitive user interface for viewing GitHub profiles and repositories.
