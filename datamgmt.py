@@ -10,7 +10,6 @@ import os
 
 token = os.environ.get("apiaccesstoken")
 
-print(token)
 
 
 import os
