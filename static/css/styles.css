@@ -201,7 +201,7 @@ body {
 }
 
 .toggleFormBtn {
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 10px;
     padding: 10px;
@@ -213,7 +213,7 @@ body {
 }
 
 .custom-form-container {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
