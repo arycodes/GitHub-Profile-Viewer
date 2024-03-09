@@ -58,6 +58,15 @@
         <p id="userrepos" style="display: none;">{{ repos | tojson }}</p>
     </div>
 
+    <button class="toggleFormBtn">Create Your Own</button>
+    
+    <div class="custom-form-container" id="customFormContainer">
+        <form id="myForm">
+            <label for="customInputField">username:</label>
+            <input type="text" id="customInputField" name="customInputField" placeholder="enter your github username">
+            <button type="submit">Create</button>
+        </form>
+    </div>
 
     <script>
 
@@ -68,8 +77,14 @@
 
     </script>
 
+
+
+
+
+    
+
+
+
 </body>
-
-
 
 </html>

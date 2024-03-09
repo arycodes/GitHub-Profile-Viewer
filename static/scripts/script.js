@@ -50,7 +50,7 @@ function displayUserData(userData) {
 function createPostDivs(data) {
     var postContainer = document.getElementById("postcontainer");
 
-    data.forEach(function(item) {
+    data.forEach(function (item) {
         var postDiv = document.createElement("div");
         postDiv.className = "post";
 
@@ -81,3 +81,23 @@ function createPostDivs(data) {
 
 displayUserData(userData);
 createPostDivs(userRepos);
+
+
+document.querySelector(".toggleFormBtn").addEventListener("click", function () {
+    var formContainer = document.getElementById("customFormContainer");
+    formContainer.classList.toggle("active");
+    if (formContainer.classList.contains("active")) {
+        document.querySelector(".toggleFormBtn").textContent = "Close Form";
+    } else {
+        document.querySelector(".toggleFormBtn").textContent = "Create Your Own";
+    }
+});
+
+document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var inputValue = document.getElementById("customInputField").value.trim();
+    if (inputValue !== "") {
+        window.location.href = "https://githubcardapp.vercel.app/" + inputValue;
+    }
+});
